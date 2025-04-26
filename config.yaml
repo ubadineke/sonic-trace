@@ -1,0 +1,67 @@
+# Sonic SVM RPC settings
+sonic:
+  rpc_url: "https://devnet.sonic.game"
+  commitment: "confirmed"
+  program_ids: [] # Add program IDs for specific dApps (e.g., SonicX)
+
+# Data Warehouse
+data_warehouse:
+  type: "" # Options: clickhouse, snowflake, bigquery
+  config:
+    host: ""
+    port: 0
+    user: ""
+    password: ""
+    database: ""
+  schema:
+    table: "transactions"
+    columns:
+      - name: "signature" # String
+      - name: "wallet_address" # String
+      - name: "program_id" # String
+      - name: "slot" # UInt64
+      - name: "timestamp" # DateTime
+      - name: "details" # String
+
+# Database (Operational)
+database:
+  type: "" # Options: postgresql, mongodb, redis
+  config:
+    host: ""
+    port: 0
+    user: ""
+    password: ""
+    database: ""
+  schema:
+    table: "transactions"
+    indexes:
+      - "wallet_address"
+      - "signature"
+
+# Data Pipeline
+pipeline:
+  type: "" # Options: airflow, dagster
+  config:
+    scheduler_url: ""
+    credentials_file: ""
+    dag_folder: "./dags"
+  jobs: []
+
+# API
+api:
+  type: "" # Options: fastify, apollo, postgrest
+  config:
+    port: 3000
+    host: "0.0.0.0"
+    routes: []
+
+# Dashboard
+dashboard:
+  type: "" # Options: superset, metabase
+  config:
+    host: ""
+    port: 0
+    user: ""
+    password: ""
+    database: ""
+  visualizations: []

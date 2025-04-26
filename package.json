@@ -1,0 +1,21 @@
+{
+  "name": "sonic-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "sonic-trace": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "node ./dist/cli/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.2",
+    "commander": "^13.1.0",
+    "tsx": "^4.19.3"
+  }
+}
