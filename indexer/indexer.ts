@@ -1,6 +1,6 @@
 import { Connection, PublicKey } from "@solana/web3.js";
 
-class SonicIndexer {
+export class SonicIndexer {
   private connection: Connection;
   // private storage: Storage
   private programId?: PublicKey;
@@ -13,7 +13,8 @@ class SonicIndexer {
 
   async start() {
     // await this.storage.initialize();
-    this.connection.onLogs(
+    await console.log("Logging has started...");
+    await this.connection.onLogs(
       this.programId || "all",
       (logs, context) => {
         console.log("New logs received: ", logs);

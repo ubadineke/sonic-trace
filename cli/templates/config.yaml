@@ -1,6 +1,6 @@
 # Sonic SVM RPC settings
 sonic:
-  rpc_url: "https://devnet.sonic.game"
+  rpc_url: "https://devnet.sonic.game" #replace with correct rpc
   commitment: "confirmed"
   program_ids: [] # Add program IDs for specific dApps (e.g., SonicX)
 

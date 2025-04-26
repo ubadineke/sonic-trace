@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SonicIndexer = void 0;
 const web3_js_1 = require("@solana/web3.js");
 class SonicIndexer {
     constructor(rpcUrl, programId, storage) {
@@ -10,7 +11,8 @@ class SonicIndexer {
     }
     async start() {
         // await this.storage.initialize();
-        this.connection.onLogs(this.programId || "all", (logs, context) => {
+        await console.log("Logging has started");
+        await this.connection.onLogs(this.programId || "all", (logs, context) => {
             console.log("New logs received: ", logs);
             // const data = {
             //   signature: logs.signature,
@@ -24,6 +26,7 @@ class SonicIndexer {
         }, "confirmed");
     }
 }
+exports.SonicIndexer = SonicIndexer;
 let fetchLogs = new SonicIndexer("https://api.mainnet-alpha.sonic.game", "SegazTQwbYWknDZkJ6j2Kgvm5gw3MrHGKtWstZdoNKZ");
 fetchLogs.start().catch(console.error);
 // // Sonic SVM Devnet RPC endpoint (replace with mainnet when available)

@@ -15,7 +15,9 @@
   "description": "",
   "dependencies": {
     "@solana/web3.js": "^1.98.2",
+    "@types/js-yaml": "^4.0.9",
     "commander": "^13.1.0",
+    "js-yaml": "^4.1.0",
     "tsx": "^4.19.3"
   }
 }
