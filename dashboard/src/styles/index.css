@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.MuiCard-root {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.MuiTableCell-root {
+  border-bottom: 1px solid #334155;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #334155;
+}
+
+.MuiChip-root {
+  border-radius: 0.5rem;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  border-radius: 0.5rem;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+  border-radius: 0.5rem;
+}
+
+.MuiSelect-select {
+  border-radius: 0.5rem;
+}
