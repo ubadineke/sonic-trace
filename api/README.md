@@ -1,6 +1,6 @@
 # SonicTrace API Documentation
 
-This document outlines the API endpoints required for the SonicTrace Dashboard components.
+This document outlines the API endpoints that users can fetch data from.
 
 ## API Endpoints
 

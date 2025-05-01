@@ -1,6 +1,6 @@
 {
-  "name": "sonic-testing",
-  "version": "1.0.0",
+  "name": "sonic-trace",
+  "version": "1.0.1",
   "main": "index.js",
   "bin": {
     "sonic-trace": "dist/cli/index.js"

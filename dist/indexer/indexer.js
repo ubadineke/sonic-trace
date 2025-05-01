@@ -11,7 +11,7 @@ class SonicIndexer {
     }
     async start() {
         // await this.storage.initialize();
-        await console.log("Logging has started");
+        await console.log("Logging has started...");
         await this.connection.onLogs(this.programId || "all", (logs, context) => {
             console.log("New logs received: ", logs);
             // const data = {
