@@ -3,6 +3,7 @@
 import { Command } from "commander";
 import { init } from "./commands/init";
 import { start } from "./commands/start";
+import { dashboard } from "./commands/dashboard";
 
 const program = new Command();
 
@@ -22,5 +23,10 @@ program
   .description("Start indexer with pre-configured settings in config.yaml")
   .option("-o, --output <path>", "Output path for config.yaml", "./config.yaml")
   .action(start);
+
+program
+  .command("dashboard")
+  .description("Start the dashboard development server")
+  .action(dashboard);
 
 program.parse(process.argv);

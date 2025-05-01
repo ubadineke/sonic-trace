@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const commander_1 = require("commander");
 const init_1 = require("./commands/init");
 const start_1 = require("./commands/start");
+const dashboard_1 = require("./commands/dashboard");
 const program = new commander_1.Command();
 program
     .name("sonic-trace")
@@ -19,4 +20,8 @@ program
     .description("Start indexer with pre-configured settings in config.yaml")
     .option("-o, --output <path>", "Output path for config.yaml", "./config.yaml")
     .action(start_1.start);
+program
+    .command("dashboard")
+    .description("Start the dashboard development server")
+    .action(dashboard_1.dashboard);
 program.parse(process.argv);

@@ -57,9 +57,13 @@ sonic-trace start
 
 Starts the indexer with the configuraton in the config.yaml file.
 
-**API**:
-
 **Launch Dashboard**
+
+```bash
+sonic-trace dashboard
+```
+
+**API**:
 
 **Add Plugin**
 

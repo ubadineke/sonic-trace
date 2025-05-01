@@ -31,13 +31,13 @@ import {
 const mockComparisonData = {
   wallets: [
     {
-      address: "0x123...",
+      address: "So11111111111111111111111111111111111111112",
       balance: "1000 $SONIC",
       transactions: 150,
       lastActive: "2024-03-20",
     },
     {
-      address: "0x456...",
+      address: "So22222222222222222222222222222222222222223",
       balance: "2000 $SONIC",
       transactions: 300,
       lastActive: "2024-03-20",
