@@ -10,8 +10,8 @@ class SonicIndexer {
             this.programId = new web3_js_1.PublicKey(programId);
     }
     async start() {
-        // await this.storage.initialize();
-        await console.log("Logging has started...");
+        // // await this.storage.initialize();
+        // await console.log("Logging has started...");
         await this.connection.onLogs(this.programId || "all", (logs, context) => {
             console.log("New logs received: ", logs);
             // const data = {

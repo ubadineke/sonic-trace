@@ -12,8 +12,8 @@ export class SonicIndexer {
   }
 
   async start() {
-    // await this.storage.initialize();
-    await console.log("Logging has started...");
+    // // await this.storage.initialize();
+    // await console.log("Logging has started...");
     await this.connection.onLogs(
       this.programId || "all",
       (logs, context) => {

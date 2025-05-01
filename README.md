@@ -2,6 +2,10 @@
 
 SonicTrace is a modular, extensible tooling framework designed for indexing, analyzing, and visualizing on-chain activities on Sonic SVM, a high-throughput Layer 2 blockchain built on Solana. It enables developers, analysts, and dApp creators to configure custom data pipelines, storage solutions, APIs, and dashboards. The framework emphasizes flexibility, allowing users to bring their own infrastructure (e.g., data warehouses) and integrate with our modern analytics tool.
 
+## Demo Video
+
+[Watch on Youtube](https://www.youtube.com/watch?v=ydvUaukUiq0)
+
 ## Features
 
 **CLI**: Generate config.yaml with sonic-trace init.
